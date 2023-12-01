@@ -103,6 +103,20 @@ class Elementor_Podjetni_Course_Card extends \Elementor\Widget_Base
             "input_type" => "text",
         ]);
 
+        $this->add_control("course-author-url", [
+            "label" => esc_html__(
+                "Course Author Profile Link",
+                "podjetni-elementor"
+            ),
+            "type" => \Elementor\Controls_Manager::URL,
+            "options" => ["url", "is_external"],
+            "default" => [
+                "url" => "",
+                "is_external" => false,
+            ],
+            "label_block" => true,
+        ]);
+
         $this->add_control("course-lp-url", [
             "label" => esc_html__("Landing Page Link", "podjetni-elementor"),
             "type" => \Elementor\Controls_Manager::URL,
@@ -172,7 +186,9 @@ class Elementor_Podjetni_Course_Card extends \Elementor\Widget_Base
                     <span class="etlms-course-author-meta tutor-meta-key">Avtor: </span>
                     <a
                         class="etlms-course-author-meta tutor-meta-value"
-                        href="#"
+                        href="<?php echo esc_attr(
+                            $settings["course-author-url"]["url"]
+                        ); ?>"
                         ><?php echo esc_attr($settings["course-author"]); ?></a>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ if (!defined("ABSPATH")) {
  * Plugin Name: Podjetni Elementor
  * Description: Elementor widgets for Podjetni.si
  * Plugin URI:  https://github.com/KomelT/podjetni-elementor-plugin
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Tilen Komel
  * Author URI:  https://www.komelt.dev/
  * Text Domain: podjetni-elementor
