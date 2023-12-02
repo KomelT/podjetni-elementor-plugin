@@ -1,5 +1,19 @@
 # Podjetni Elementor Plugin
 
+## Development
+
+```bash
+git clone https://github.com/KomelT/podjetni-elementor-plugin.git
+cd podjetni-elementor-plugin
+yarn
+```
+
+### Build
+
+```bash
+yarn run build
+```
+
 ## Requirements
 
 Some CSS classes are imported from [Tutor LMS](https://wordpress.org/plugins/tutor/) and [Tutor LMS Elementor Addons](https://wordpress.org/plugins/tutor-lms-elementor-addons/).
